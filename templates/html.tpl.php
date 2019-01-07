@@ -64,8 +64,8 @@
 <?php print $styles; ?>
 <?php print $scripts; ?>
 <?php print $polyfills; ?>
-<link href="https://bomtatt-utbildning.se/sites/all/themes/mix_and_match/video-js/video-js.css" rel="stylesheet" type="text/css">
-<script src="https://bomtatt-utbildning.se/sites/all/themes/mix_and_match/video-js/video.js"></script>
+    <link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet">
+    <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
 </head>
 <body class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <div id="skip-link">
@@ -74,5 +74,6 @@
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
+    <script src="https://vjs.zencdn.net/7.4.1/video.js"></script>
 </body>
 </html>
