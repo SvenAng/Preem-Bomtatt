@@ -17,9 +17,6 @@
   stylesheets[screen][] = css/colors.css
   stylesheets[print][] = css/print.css
 	
-;----------// VideoJS	
-	; stylesheets[all][] = video-js/video-js.css
-	; scripts[] = video-js/video.js
 
 ;----------// Regions
 
