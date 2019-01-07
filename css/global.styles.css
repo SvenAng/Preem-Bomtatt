@@ -1241,7 +1241,7 @@ table{
 	border: none;
 }
 #questions{
-  
+  display: none;
 }
 #questions a{
   display: block;
