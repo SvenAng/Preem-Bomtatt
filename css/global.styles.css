@@ -1236,17 +1236,7 @@ body.gy-pbg.rc11 #menu-bar ul li.first a {
 	background: none !important;
 	border-top: 1px solid #d6d6d6 !important;
 }
-/*.view-header{
-	float: left;
-	width: 50%;
-}
-.view-filters{
-	float: left;
-	width: 50%;
-}
-.view-content{
-	clear: both;
-}*/
+
 table{
 	border: none;
 }
@@ -1270,4 +1260,34 @@ table{
 }
 .page-node-take #tasks{
   display: none;
+}
+/* ==================== Customisering av Videospelaren 7 jan 2019 ======================== */
+.video-js{
+    background-color: #fff !important;
+}
+.video-js .vjs-progress-control,
+.video-js .vjs-fullscreen-control{
+    display: none !important;
+}
+
+.video-js .vjs-big-play-button{
+    left: 49%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.my-video-dimensions{
+    width: 815px; 
+    height: 460px;
+}
+@media screen and (max-width: 1025px) {
+    .my-video-dimensions{
+        width: 750px; 
+        height: 460px;
+    }
+}
+@media screen and (max-width: 769px) {
+    .my-video-dimensions{
+        width: 710px; 
+        height: 460px;
+    }
 }
