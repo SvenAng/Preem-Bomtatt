@@ -19,7 +19,7 @@
 	
 ;----------// VideoJS	
 	; stylesheets[all][] = video-js/video-js.css
-	scripts[] = video-js/video.js
+	; scripts[] = video-js/video.js
 
 ;----------// Regions
 
