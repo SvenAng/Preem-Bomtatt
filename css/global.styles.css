@@ -1413,6 +1413,16 @@ table {
         width: 710px;
         height: 460px;
     }
+    #questions span,
+    #igen span,
+    #starta span,
+    #paus span,
+    #startaigen span{
+        padding: 10px;
+        border: 1px solid gray;
+        font-size: 17px;
+
+    }
 }
 
 @media screen and (max-width: 475px) {
