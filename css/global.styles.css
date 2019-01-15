@@ -1334,27 +1334,33 @@ table {
     display: none;
 }
 
-#questions a,
-#igen a,
-#starta a,
-#paus a,
-#startaigen a{
+#questions span,
+#igen span,
+#starta span,
+#paus span,
+#startaigen span{
+    padding: 15px;
+    border: 1px solid gray;
     font-size: 20px;
     color: #000;
-/*    background: gray;*/
-    /*                border-radius: 20px;*/
-    padding: 15px;
-    text-decoration: none;
-    border: 1px solid gray;
-/*    margin-top: 40px;*/
+    cursor: pointer;
 }
-
+#questions span:hover,
+#igen span:hover,
+#starta span:hover,
+#paus span:hover,
+#startaigen span:hover{
+    background: #e5e5e5;
+}
 #questions,
 #igen,
 #starta,
 #paus,
 #startaigen{
     margin-top: 40px;
+    
+    
+    
 }
 .node-film .node-content .field-item{
 /*    text-align: center;*/
@@ -1385,6 +1391,9 @@ table {
 }
 */
 /*====*/
+.view-kursmoment- a strong{
+    font-size: 16px
+}
 /*Tabbar\*/
 .page-node-quiz-results #tasks {
     display: none;
@@ -1407,6 +1416,16 @@ table {
 }
 
 @media screen and (max-width: 475px) {
+    #questions span,
+    #igen span,
+    #starta span,
+    #paus span,
+    #startaigen span{
+        padding: 10px;
+        border: 1px solid gray;
+        font-size: 17px;
+        
+    }
     .my-video-dimensions {
         width: 310px;
         height: 235px;
@@ -1414,8 +1433,13 @@ table {
 
     #name-and-slogan {
         padding-top: 0;
+        float:left !important;
+        width: 60% !important; 
     }
-
+    #logo{
+        width: 30% !important;
+        float:left !important;
+    }
     #logo img {
         height: 100px;
     }
@@ -1427,7 +1451,10 @@ table {
     #site-name {
         line-height: 18px;
     }
-
+    #name-and-slogan{
+        text-align: left !important;
+        margin-top: 20px;
+    }
     #name-and-slogan h2 {
         font-size: 16px;
         padding-bottom: 15px;
