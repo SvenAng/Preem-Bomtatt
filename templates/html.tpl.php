@@ -66,7 +66,9 @@
 <?php print $polyfills; ?>
     <link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet">
     <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <div id="skip-link">
@@ -76,5 +78,20 @@
   <?php print $page; ?>
   <?php print $page_bottom; ?>
     <script src="https://vjs.zencdn.net/7.4.1/video.js"></script>
+    <script>
+//        $('a[target="_blank"]').removeAttr('target');
+        $(document).ready(function(){
+
+            var iframe = $('.node-content iframe');
+            var player = new Vimeo.Player(iframe);
+
+            player.on('ended', function() {
+//                console.log('Finished.');
+                $('a.vp-outro-button').removeAttr('target');
+            });
+
+        });
+    </script>
+    <script src="/sites/all/themes/mix_and_match/scripts/video.js"></script>
 </body>
 </html>
