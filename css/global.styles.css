@@ -17,6 +17,9 @@
  * See global.base also which includes normalize.css and some additional
  * helper classes and base styles.
  */
+.date-combo .form-item .description{
+    display: none;
+}
 #user-pass-reset .placeholder {
     font-weight: bold;
 }
